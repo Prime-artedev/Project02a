@@ -54,8 +54,9 @@ app.post("/webhook", async (req, res) => {
           from: numeroUser,
           msgBody: mensagemUser
       }
+        console.log('##' + dadosUsuario)
 
-      let userBd = await getOrCreateUser(dadosUsuario);
+/*       let userBd = await getOrCreateUser(dadosUsuario);
       let variablesChat = JSON.parse(userBd.results[0].variaveis_text);
       
       let contentBot = await getBotContent();
@@ -101,7 +102,7 @@ app.post("/webhook", async (req, res) => {
       //let urlResponse = await axios(config).catch(err => {
         //console.log(err);
       //});
-      
+       */
     }
 
     res.sendStatus(200);

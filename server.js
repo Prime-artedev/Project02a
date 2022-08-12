@@ -21,7 +21,7 @@ const readIntencion = require('./bot/readIntentions.js');
 
 
 app.use(cors());
-app.listen(process.env.PORT || 1337, () => console.log("webhook is listening"));
+app.listen(process.env.PORT || 3002, () => console.log("webhook is listening"));
 
 app.post("/webhook", async (req, res) => {
   

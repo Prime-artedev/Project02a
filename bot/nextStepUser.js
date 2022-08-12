@@ -12,7 +12,7 @@ const getOrCreateUser = async (nextStepUser) => {
   let getUserChat = await getUserBd(data.numeroBot, data.telefone_formatado);
   let upDateStepUser = await updateUser(getUserChat.response, );
   }
-}
+
 
 
 const getUserBd = async (numeroBot, telefone_formatado) => {
